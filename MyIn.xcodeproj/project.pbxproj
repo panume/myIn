@@ -12,6 +12,11 @@
 		F99584EF1D0589210027DF1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99584ED1D0589210027DF1F /* Main.storyboard */; };
 		F99584F11D0589210027DF1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F99584F01D0589210027DF1F /* Assets.xcassets */; };
 		F99584F41D0589210027DF1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99584F21D0589210027DF1F /* LaunchScreen.storyboard */; };
+		F99585061D058D110027DF1F /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = F99585031D058D110027DF1F /* .gitkeep */; };
+		F99585071D058D110027DF1F /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = F99585051D058D110027DF1F /* MMMaterialDesignSpinner.m */; };
+		F995850A1D0592540027DF1F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99585091D0592540027DF1F /* LoginViewController.swift */; };
+		F9BA58941D06CC4700437C59 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BA58931D06CC4700437C59 /* Spinner.swift */; };
+		F9CE80131D0FA162008CE3EF /* PPActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CE80121D0FA162008CE3EF /* PPActionSheet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,12 @@
 		F99584F01D0589210027DF1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F99584F31D0589210027DF1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F99584F51D0589210027DF1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F99585031D058D110027DF1F /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		F99585041D058D110027DF1F /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		F99585051D058D110027DF1F /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		F99585091D0592540027DF1F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F9BA58931D06CC4700437C59 /* Spinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		F9CE80121D0FA162008CE3EF /* PPActionSheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPActionSheet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +65,8 @@
 		F99584E81D0589210027DF1F /* MyIn */ = {
 			isa = PBXGroup;
 			children = (
+				F99585081D058D3B0027DF1F /* Login */,
+				F99584FB1D058C8E0027DF1F /* Vender */,
 				F99584E91D0589210027DF1F /* AppDelegate.swift */,
 				F99584EB1D0589210027DF1F /* ViewController.swift */,
 				F99584ED1D0589210027DF1F /* Main.storyboard */,
@@ -62,6 +75,34 @@
 				F99584F51D0589210027DF1F /* Info.plist */,
 			);
 			path = MyIn;
+			sourceTree = "<group>";
+		};
+		F99584FB1D058C8E0027DF1F /* Vender */ = {
+			isa = PBXGroup;
+			children = (
+				F99585021D058D110027DF1F /* Spinner */,
+				F9BA58931D06CC4700437C59 /* Spinner.swift */,
+				F9CE80121D0FA162008CE3EF /* PPActionSheet.swift */,
+			);
+			path = Vender;
+			sourceTree = "<group>";
+		};
+		F99585021D058D110027DF1F /* Spinner */ = {
+			isa = PBXGroup;
+			children = (
+				F99585031D058D110027DF1F /* .gitkeep */,
+				F99585041D058D110027DF1F /* MMMaterialDesignSpinner.h */,
+				F99585051D058D110027DF1F /* MMMaterialDesignSpinner.m */,
+			);
+			path = Spinner;
+			sourceTree = "<group>";
+		};
+		F99585081D058D3B0027DF1F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F99585091D0592540027DF1F /* LoginViewController.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +166,7 @@
 				F99584F41D0589210027DF1F /* LaunchScreen.storyboard in Resources */,
 				F99584F11D0589210027DF1F /* Assets.xcassets in Resources */,
 				F99584EF1D0589210027DF1F /* Main.storyboard in Resources */,
+				F99585061D058D110027DF1F /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +178,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F99584EC1D0589210027DF1F /* ViewController.swift in Sources */,
+				F99585071D058D110027DF1F /* MMMaterialDesignSpinner.m in Sources */,
+				F995850A1D0592540027DF1F /* LoginViewController.swift in Sources */,
 				F99584EA1D0589210027DF1F /* AppDelegate.swift in Sources */,
+				F9BA58941D06CC4700437C59 /* Spinner.swift in Sources */,
+				F9CE80131D0FA162008CE3EF /* PPActionSheet.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AC.MyIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MyIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = AC.MyIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +336,7 @@
 				F99584FA1D0589210027DF1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
