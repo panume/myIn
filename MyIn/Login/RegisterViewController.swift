@@ -20,6 +20,8 @@ class RegisterViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        // MARK: nothing
+        
         self.photoView.layer.cornerRadius = 20
         self.passwordView.layer.cornerRadius = 20
         self.registerButton.layer.cornerRadius = 20
