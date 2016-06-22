@@ -26,6 +26,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         navController = UINavigationController.init(rootViewController: viewController!)
         
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: false)
+    
+        UINavigationBar.appearance().translucent = false
         
         window?.rootViewController = navController
         window?.makeKeyAndVisible()

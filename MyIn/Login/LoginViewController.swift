@@ -7,9 +7,9 @@
 //
 
 import UIKit
-//import PPActionSheet
 
-class LoginViewController: UIViewController {
+
+class LoginViewController: UIViewController, PPActionSheetDelegate {
 
     @IBOutlet weak var portrait: UIImageView!
     @IBOutlet weak var backImageView: UIImageView!
@@ -23,7 +23,6 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        self.navigationController?.setNavigationBarHidden(true, animated:false)
         
         self.setGaussBlur(self.backImageView.image!)
         
@@ -67,6 +66,20 @@ class LoginViewController: UIViewController {
 
     }
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated:animated)
+
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        NSLog("123")
+    }
+    
+    
+    
     func setGaussBlur(image: UIImage) {
 //        var imageToBlur = CIImage(image: image)
 //        var blurfilter = CIFilter(name: "CIGaussianBlur")
@@ -82,8 +95,21 @@ class LoginViewController: UIViewController {
         self.backImageView.addSubview(blurView)
         
     }
+    @IBAction func registerButtonPressed(sender: AnyObject) {
+        
+        let viewController = self.storyboard?.instantiateViewControllerWithIdentifier("registerControllerId")
+        self.navigationController?.pushViewController(viewController!, animated: true)
+        
+    }
     
     @IBAction func loginIssueButtonPressed(sender: AnyObject) {
+        let actionSheet = PPActionSheet.init(title: "", cancelButtonTitle:"取消", otherButtonTitles:["用手机号重置密码", "帮助与反馈"])
+        actionSheet.delegate = self
+        actionSheet.show()
+    }
+    
+    func PPActionSheetSelect(ppActionSheet: PPActionSheet, index: NSInteger) {
+        
         
     }
     

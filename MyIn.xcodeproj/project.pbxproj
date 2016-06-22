@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F95A96581D100AC100C87F18 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95A96571D100AC100C87F18 /* RegisterViewController.swift */; };
 		F99584EA1D0589210027DF1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99584E91D0589210027DF1F /* AppDelegate.swift */; };
 		F99584EC1D0589210027DF1F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99584EB1D0589210027DF1F /* ViewController.swift */; };
 		F99584EF1D0589210027DF1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F99584ED1D0589210027DF1F /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F95A96571D100AC100C87F18 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F99584E61D0589210027DF1F /* MyIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F99584E91D0589210027DF1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F99584EB1D0589210027DF1F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				F99585091D0592540027DF1F /* LoginViewController.swift */,
+				F95A96571D100AC100C87F18 /* RegisterViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				F99584EC1D0589210027DF1F /* ViewController.swift in Sources */,
 				F99585071D058D110027DF1F /* MMMaterialDesignSpinner.m in Sources */,
+				F95A96581D100AC100C87F18 /* RegisterViewController.swift in Sources */,
 				F995850A1D0592540027DF1F /* LoginViewController.swift in Sources */,
 				F99584EA1D0589210027DF1F /* AppDelegate.swift in Sources */,
 				F9BA58941D06CC4700437C59 /* Spinner.swift in Sources */,
